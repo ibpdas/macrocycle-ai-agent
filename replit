@@ -1,0 +1,125 @@
+# MacroCycle AI Agent
+
+## Overview
+
+MacroCycle is an autonomous macro-economic intelligence assistant that integrates multiple public data feeds, including FRED, CBOE, and SEC. The agent analyses liquidity conditions, volatility measures, and key macro indicators to infer the stage of the business cycle.
+
+Using a combination of data-orchestration pipelines and large-language-model reasoning, it summarises market shifts in real time and generates interpretable explanations for both investors and policymakers.
+
+The prototype demonstrates the potential of AI-agent orchestration for real-time data management, while highlighting the ongoing need for human oversight, FinOps discipline, and ethical guardrails in autonomous analytics.
+
+**Created by:** Bandhu Das FCCA ([LinkedIn](https://www.linkedin.com/in/ibpdas/))  
+**Developed as part of the Imperial AI Policy Fellowship**
+
+## User Preferences
+
+Preferred communication style: Simple, everyday language.
+
+## System Architecture
+
+### Frontend Architecture
+
+**Framework**: Streamlit for rapid development of data-focused web applications.
+**Design Pattern**: Multi-page navigation with cached data loading (`@st.cache_data`) to optimize API calls and improve performance.
+
+### Backend Architecture
+
+**Core Components**:
+- **Data Fetching Layer**: Retrieves macroeconomic and market data with fallback mechanisms using sample data generators.
+- **Business Cycle Analysis**: Determines current business cycle phase using GDP, unemployment, inflation, and ISM PMI, providing phase classification with confidence scores.
+- **Historical Backtesting**: Compares current conditions with past business cycles, offering similarity scoring and sector performance tracking.
+- **Portfolio Positioning**: Provides dynamic asset allocation recommendations based on cycle phase and user risk profiles (Conservative, Moderate, Aggressive).
+- **Watchlist Management**: Offers sector rotation signals, custom watchlist tracking, and diversification scoring.
+
+### Application Flow
+
+The application features sidebar navigation for different analysis pages. Economic and market data are fetched (with caching) on initial load, processed by the business cycle analyzer, and displayed through interactive Plotly visualizations.
+
+### Configuration Management
+
+**Environment Variables**: `FRED_API_KEY` is used for Federal Reserve Economic Data API access.
+**Data Source Integration**: Real-time data from FRED and Yahoo Finance with caching for performance.
+
+### Data Visualization Strategy
+
+**Library**: Plotly (graph_objects and express) for interactive, publication-quality charts that integrate well with Streamlit.
+
+### Application Pages
+
+The application consists of 6 main pages organized into logical groups:
+
+**📊 Dashboard (1 page)**
+- **Key Indicators** (Default/Home Page): Comprehensive dashboard organized into 6 themed tabs for easier navigation:
+  - **🔄 Business Cycle Tab**: Current phase with cycle-specific leading/coincident indicators (Yield Curve Spread, ISM Manufacturing PMI, Real GDP Growth, NFCI Credit Conditions) plus historical GDP and Financial Conditions charts
+  - **📊 Macro Economics Tab**: CPI inflation, unemployment rate, and Federal Reserve interest rates & policy stance
+  - **💵 Liquidity & Credit Tab**: M2 Money Supply YoY growth and NFCI financial conditions index
+  - **😱 Market Sentiment Tab**: Key sentiment indicators (VIX, Put/Call Ratio, VVIX, HY-IG Spread) with color-coded status, detailed VIX analysis, and AAII Retail Investor Sentiment Survey with pie chart visualization
+  - **📉 Market Structure Tab**: Full US Treasury Yield Curve (2Y, 5Y, 10Y, 30Y) with 10Y-2Y spread analysis, and market momentum (SPY/QQQ/IWM vs 10-month MA)
+  - **💰 Sectors & Assets Tab**: Sector performance charts (11 sectors) and alternative assets (Gold, Bitcoin, DXY)
+
+**🤖 AI Research Agent (1 page)**
+- **AI Research Agent**: Autonomous AI-powered chat assistant that takes actions and answers questions about economic data, business cycles, and market conditions. Features include:
+  - **Autonomous Capabilities**: AI can autonomously execute actions using OpenAI function calling:
+    - **📊 Data Fetching**: Automatically fetch specific economic metrics (VIX, GDP, Inflation, Unemployment, etc.) from current context
+    - **📈 Visualization Requests**: Create comparison charts for multiple indicators over different time periods
+    - **🧭 Navigation Suggestions**: Suggest navigation to relevant analysis pages based on user questions
+    - **🔍 Sector Analysis**: Analyze sector performance and identify top/bottom performers
+  - **Current Economic Context**: Expandable panel showing 12 key metrics across 3 columns (Business Cycle phase with confidence, GDP, Unemployment, Inflation, Fed Funds Rate, ISM Manufacturing, ISM Services, VIX, 10Y-2Y Spread, M2 Growth, NFCI, Fear & Greed Index)
+  - **Suggested Questions**: Context-aware question buttons that vary based on current business cycle phase, including action-oriented queries
+  - **Chat Interface**: Natural language conversation with AI using OpenAI GPT-5, providing educational insights framed as historical patterns
+  - **Economic Context Awareness**: AI has access to all current economic data for data-driven responses
+  - **Conversation History**: Multi-turn conversations with persistent chat history during session
+  - **Action Transparency**: Autonomous actions are displayed in a dedicated "🤖 Autonomous Actions Taken" section with colored status indicators
+
+**🔄 Business Cycle (1 page with 4 tabs)**
+Consolidated cycle analysis with tabbed navigation:
+- **🔄 Cycle Analysis Tab**: Detailed business cycle analysis with ISM PMI indicators, leading vs lagging indicator breakdown, phase transition triggers, global events impact analysis, and historical cycle patterns (framed as insights, not prescriptive recommendations).
+- **⏮️ Historical Backtesting Tab**: Comparison with past cycles and performance analysis (shows historical patterns, not predictions, with integrated cycle context).
+- **💼 Portfolio Positioning Tab**: Historical asset allocation patterns and portfolio comparison tool (reframed from "recommendations" to "insights", all prescriptive language changed to descriptive/historical with comprehensive disclaimers).
+- **⭐ Sector Watchlist Tab**: Historical sector patterns and custom watchlist management (reframed from "rotation signals" to "historical patterns", showing sectors that historically outperformed/underperformed in each cycle phase).
+
+**📈 Market Data (1 page)**
+Market indicators and analysis:
+- **Market Analysis** (with 2 tabs):
+  - **📊 Sectors & Performance Tab**: Comprehensive sector and asset class performance tracking with Market Sentiment & Risk Indicators section featuring Put/Call Ratio, VVIX, HY-IG Spread, ETF Flows tracking (SPY, QQQ, IWM, TLT), and AAII Sentiment Survey
+  - **😱 Fear & Greed Index Tab**: Educational page for market sentiment analysis using CNN's 7-indicator methodology (calculated approximation with educational warnings). Includes interactive gauge, all 7 component indicators with expandable details, and comparison with CNN's official index.
+
+**📚 Resources (1 page)**
+- **Resources & Further Reading**: Curated collection of external resources for policymakers, academics, and investors:
+  - Official Data Sources (FRED, BLS, Federal Reserve, CBOE)
+  - Academic & Educational Resources (NBER, IMF, CFA Institute, BIS, OECD)
+  - Policy & AI Governance Resources (Imperial AI Policy, OECD AI, EU AI Act, UK AI Safety Institute)
+  - Tools & Calculators (Economic calendars, portfolio tools, sentiment trackers)
+  - Recommended Reading (Foundational texts, modern analysis, AI & technology books)
+
+**ℹ️ Info (1 page)**
+- **About**: Comprehensive information organized into 8 sections:
+  1. What is MacroCycle AI Agent? (Introduction and purpose)
+  2. What Does It Do? (Agent-focused: Automates Key Metrics, Infers & Analyzes, Natural Language Query, Self-Service Analysis)
+  3. Who Can Use It and How? (Audience-specific guidance for policymakers, academics/students, investors)
+  4. Created By (Human creator: Bandhu Das FCCA; AI agents collaboration: Replit Agent, Architect Agent, Testing Agent, OpenAI GPT-5 Agent)
+  5. Data Sources (FRED, CBOE, SEC/Yahoo Finance, custom calculators)
+  6. Methodology & Data Quality (Business cycle classification, backtesting methodology, data limitations, model assumptions, confidence intervals)
+  7. Important Disclaimers (Investment disclaimer, AI & data limitations)
+  8. Prototype Learnings: AI Governance & Operational Realities
+     - Core operational challenges: Data provenance & management, human oversight & accountability, FinOps & sustainability, scalability & architecture, security & compliance, explainability & transparency
+     - Data ethics considerations: Representation & bias, synthetic data boundaries
+     - Policy implications for AI regulation in finance
+
+## External Dependencies
+
+### Third-Party APIs
+
+1.  **FRED API (Federal Reserve Economic Data)**: For real-time US economic indicators (GDP, CPI, unemployment, interest rates).
+2.  **Yahoo Finance (yfinance)**: For market data on sectors and asset classes.
+3.  **OpenAI API (GPT-5)**: For AI-powered research assistant providing natural language insights about economic data and business cycles.
+4.  **Fear & Greed Index (Custom Calculation)**: Market sentiment indicator using CNN's 7-indicator methodology, implemented with custom calculation using various data sources.
+5.  **ISM PMI (Purchasing Managers' Index)**: Leading economic indicators for manufacturing and services, using realistic synthetic data.
+
+### Core Python Libraries
+
+1.  **Streamlit**: Web application framework.
+2.  **Plotly**: Interactive charting library.
+3.  **Pandas**: Data manipulation and analysis.
+4.  **NumPy**: Numerical computing.
+5.  **OpenAI Python SDK**: For AI agent integration.
