@@ -118,42 +118,44 @@ This tool is for **educational and research purposes only**. It does not provide
 
 ### AI & Data Limitations
 - **Historical Patterns**: All insights are based on past data and do not predict future outcomes
-- **Data Quality**: Relies on third-party APIs; accuracy depends on source data quality
+- **Data Quality**: Relies on 3rd party APIs; accuracy depends on source data quality
 - **Model Assumptions**: Business cycle classification uses simplified algorithms and should be validated against professional analysis
 - **AI Responses**: Generated insights may contain errors; always verify with authoritative sources
 
-## 🔬 Prototype Learnings: AI Governance & Operational Realities
+## 🔬 MacrCycle Prototype Learnings:
 
-This prototype demonstrates critical challenges in deploying autonomous AI agents for financial analysis:
+This prototype demonstrates critical challenges in deploying autonomous AI agents:
 
-### Core Operational Challenges
-1. **Data Provenance & Management**: Tracking lineage from FRED/CBOE/Yahoo Finance
-2. **Human Oversight & Accountability**: Critical for financial applications
-3. **FinOps & Sustainability**: Managing API costs and computational resources
-4. **Scalability & Architecture**: Handling real-time data at scale
-5. **Security & Compliance**: Protecting sensitive financial data
-6. **Explainability & Transparency**: Making AI decisions interpretable
+### Overall Challenges
+1. **Scalability & Architecture**: Extending the prototype to handle higher-frequency and multi-domain data (e.g., economic, environmental, geospatial) while maintaining modular, serverless design
+2. **Data Provenance & Management**: Strengthening lineage tracking and metadata for open and legacy sources to ensure traceability, trust, and reuse
+3. **Human Oversight & Accountability**: Embedding expert review into automated inference to balance machine efficiency with contextual judgemen 
+4. **FinOps & Sustainability**: Managing API usage, cloud costs, and computational efficiency in line with sustainablity practices
+5. **Security & Compliance**: Ensuring adherence to data protection standards when integrating external or sensitive datasets
+6. **Explainability & Transparency**: Making all AI driven insights interpretable, auditable, and explainable for public sector decision-making 
 
 ### Data Ethics Considerations
-- **Representation & Bias**: Ensuring diverse data sources and avoiding historical biases
-- **Synthetic Data Boundaries**: Clear labeling when using approximations (e.g., ISM PMI, Fear & Greed Index)
+- **Representation & Bias**: Data reflects inherent economic and geographic biases. Future iterations or similar use cases such as Circular Economy will need diversify inputs to improve fairness
+- **Synthetic Data Boundaries**: Approximations and proxies (e.g., ISM PMI, Fear & Greed Index) are clearly labelled and used for demonstration only
+- **Responsible use of insights**: Dashboards emphasise interpretation over prediction to reduce anchoring and confirmation bias 
 
-### Policy Implications
-Highlights the need for regulatory frameworks addressing AI in financial services, particularly around:
-- Automated decision-making transparency
-- Data quality standards
-- Human-in-the-loop requirements
-- Consumer protection in AI-driven analytics
+### Data Policy Implications
+MacroCycle demonstrates the kind of data and AI governance challenges must be addressed as automated analysis becomes routine. It underscores the need for:
+- **Transparent Data Lineage** – every indicator and transformation should be traceable and versioned for accountability
+- **Interoperable Data Models** – adopting open formats that enable reuse across departments and domains
+- **Responsible AI Use** – embedding explainability, bias assessment, and human-in-the-loop review into automated pipelines
+- **Sustainable Data Operations** – balancing innovation with environmental and financial cost awareness (FinOps)
+- **Ethical Reuse of Open Data** – ensuring public datasets are used in ways that build trust, not distort evidence
 
 ## 👥 Multi-Agent Collaboration
 
 This project was built through collaboration between multiple AI agents:
-- **Replit Agent**: Core application development
+- **Replit Agent**: Core application development 
 - **Architect Agent**: Code review and architectural guidance
 - **Testing Agent**: End-to-end testing with Playwright
 - **OpenAI GPT-5 Agent**: Natural language research assistant
 
-This meta-narrative demonstrates AI governance principles in practice—an AI tool built BY AI agents, showcasing both capabilities and limitations.
+This project demonstrates development of an AI tool built BY AI agents, showcasing both capabilities and limitations.
 
 ## 📝 Project Structure
 
@@ -178,7 +180,6 @@ macrocycle-ai-agent/
 ## 🔗 Links & Resources
 
 - **Creator**: [Bandhu Das FCCA on LinkedIn](https://www.linkedin.com/in/ibpdas/)
-- **Imperial AI Policy Fellowship**: Research on AI governance and policy
 - **Data Sources**: [FRED](https://fred.stlouisfed.org/), [CBOE](https://www.cboe.com/), [Yahoo Finance](https://finance.yahoo.com/)
 
 ## 📄 License
