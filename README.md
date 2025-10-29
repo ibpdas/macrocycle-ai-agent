@@ -5,7 +5,20 @@ An autonomous macro-economic intelligence assistant that integrates multiple pub
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
 **Built for learning, analysis and experimentation - not finacial advice**
 
-## 🎯 What Does It Do?
+**Purpose**
+
+MacroCycle was developed as a testbed for AI agent capability, data infrastructure, and ethical governance — exploring how autonomous, explainable systems can support evidence-based decision-making.
+
+While the prototype focuses on macro-economic indicators, the same architecture and design principles can be repurposed for wider environmental missions, including circular economy modelling, natural capital accounting, and sustainability analytics.
+
+It demonstrates how AI agents can be safely adopted to:
+
+- automate data workflows,
+- ensure reproducibility and transparency, and
+- operationalise responsible data and AI practices at scale.
+
+
+## What Does MacroCycle Do?
 
 MacroCycle demonstrates the potential of an AI-driven macro-intelligence agent — combining open data, structured reasoning, and explainable automation:
 
@@ -15,34 +28,34 @@ MacroCycle demonstrates the potential of an AI-driven macro-intelligence agent �
 - **Enables Self-Service Analysis**: Let diverse users with varying knowledge levels to explore macro-economic relationships interactively
 - **Ensures Reprducability and Transparency**: Built on open data, versioned outputs, and a serverless, modular architecture orchestrated through GitHub Actions.
 
-## 🏗️ Key Features
+## Key Features
 
-### 📊 Dashboard
-- **6 Themed Tabs**: Business Cycle, Macro Economics, Liquidity & Credit, Market Sentiment, Market Structure, Sectors & Assets
+### Dashboard
+- **6 Themes**: Business Cycle, Macro Economics, Liquidity & Credit, Market Sentiment, Market Structure, Sectors & Assets
 - **Real-time Indicators**: GDP, unemployment, inflation, ISM PMI, yield curves, VIX, M2 money supply, and more
-- **Interactive Visualisations**: Powered by Plotly for publication-quality charts
+- **Interactive Visualisations**: Charts with plain English explanations
 
-### 🤖 AI Research Agent
+### AI Research Agent
 - **Autonomous Actions**: AI can fetch data, create visualizations, and suggest navigation autonomously
 - **Economic Context Awareness**: Access to 12+ key metrics for data-driven responses
 - **Educational Insights**: Historical patterns framed as insights, not predictions
 - **Conversation History**: Multi-turn natural language conversations
 
-### 🔄 Business Cycle Analysis
+### Business Cycle Analysis
 - **Phase Classification**: Determines current cycle stage using GDP, unemployment, inflation, and ISM PMI
 - **Historical Backtesting**: Compares current conditions with past cycles
 - **Portfolio Insights**: Historical asset allocation patterns across cycle phases
 - **Sector Patterns**: Tracks sectors that historically outperformed/underperformed in each phase
 
-### 📈 Market Data
+### Market Data
 - **Sector Performance**: Tracks 11 S&P 500 sectors plus alternative assets (Gold, Bitcoin, DXY)
 - **Sentiment Indicators**: VIX, Put/Call Ratio, VVIX, HY-IG Spread, ETF Flows, AAII Survey
 - **Fear & Greed Index**: Educational approximation using CNN's 7-indicator methodology
 
-### 📚 Resources
+### Resources
 - Curated collection of official data sources, academic materials, policy resources, and recommended reading
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8+
@@ -79,14 +92,14 @@ streamlit run app.py --server.port 5000
 5. **Open your browser:**
 Navigate to `http://localhost:5000`
 
-## 📊 Data Sources
+## Data Sources
 
 - **FRED (Federal Reserve Economic Data)**: GDP, CPI, unemployment, interest rates, M2 money supply, NFCI
 - **Yahoo Finance (yfinance)**: Sector performance, ETFs, alternative assets
 - **CBOE**: VIX, VVIX, Put/Call Ratio
 - **Custom Calculations**: Fear & Greed Index, ISM PMI (synthetic for demonstration)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Streamlit
 - **Visualizations**: Plotly (graph_objects & express)
@@ -94,41 +107,24 @@ Navigate to `http://localhost:5000`
 - **APIs**: FRED API, Yahoo Finance, OpenAI GPT-5
 - **Business Logic**: Custom Python algorithms for cycle analysis
 
-## 📖 Who Can Use It?
+## Who Can Use It?
 
-### 👔 Policymakers
-- Monitor real-time liquidity and credit conditions
-- Track leading vs lagging indicators
-- Understand global events' impact on economic cycles
+### Policymakers, Acedmics & students, Investors
+A learning and decision support tool for exploring economic patterns, liquidity dynamics, and cross-sector relationship
 
-### 🎓 Academics & Students
-- Explore relationships between macro variables
-- Study historical business cycles
-- Learn about economic indicators and their interpretations
-
-### 💼 Investors
-- Analyze historical sector patterns across business cycles
-- Track market sentiment and volatility
-- Compare current conditions with past cycles
-
-## ⚠️ Important Disclaimers
-
-### Investment Disclaimer
-This tool is for **educational and research purposes only**. It does not provide investment advice, financial recommendations, or trading signals. All content shows historical patterns and should not be interpreted as predictions or guidance for future investment decisions. Past performance does not indicate future results.
-
-### AI & Data Limitations
-- **Historical Patterns**: All insights are based on past data and do not predict future outcomes
-- **Data Quality**: Relies on 3rd party APIs; accuracy depends on source data quality
-- **Model Assumptions**: Business cycle classification uses simplified algorithms and should be validated against professional analysis
-- **AI Responses**: Generated insights may contain errors; always verify with authoritative sources
+## Disclaimer
+- Educational Use Only – No investment or financial advice.
+- All insights are based on historical data and public APIs.
+- LLM-generated outputs may contain factual or interpretive errors; always verify with authoritative sources.
+- Experimental - Not an official government product or analysis. 
 
 ## 🔬 MacrCycle Prototype Learnings:
 
 This prototype demonstrates critical challenges in deploying autonomous AI agents:
 
 ### Overall Challenges
-1. **Scalability & Architecture**: Extending the prototype to handle higher-frequency and multi-domain data (e.g., economic, environmental, geospatial) while maintaining modular, serverless design
-2. **Data Provenance & Management**: Strengthening lineage tracking and metadata for open and legacy sources to ensure traceability, trust, and reuse
+1. **Scalability & Architecture**: Extending the prototype to handle higher frequency and multi domain, multi modal data (e.g., economic, environmental, geospatial) while maintaining modular, serverless design
+2. **Data Provenance & Management**: Ensuring lineage tracking and metadata consistency for trust and reuse
 3. **Human Oversight & Accountability**: Embedding expert review into automated inference to balance machine efficiency with contextual judgemen 
 4. **FinOps & Sustainability**: Managing API usage, cloud costs, and computational efficiency in line with sustainablity practices
 5. **Security & Compliance**: Ensuring adherence to data protection standards when integrating external or sensitive datasets
@@ -140,10 +136,10 @@ This prototype demonstrates critical challenges in deploying autonomous AI agent
 - **Responsible use of insights**: Dashboards emphasise interpretation over prediction to reduce anchoring and confirmation bias 
 
 ### Data Policy Implications
-MacroCycle demonstrates the kind of data and AI governance challenges must be addressed as automated analysis becomes routine. It underscores the need for:
+MacroCycle highlights emerging data governance priorities for AI-enabled analysis and public-sector reuse:
 - **Transparent Data Lineage** – every indicator and transformation should be traceable and versioned for accountability
-- **Interoperable Data Models** – adopting open formats that enable reuse across departments and domains
-- **Responsible AI Use** – embedding explainability, bias assessment, and human-in-the-loop review into automated pipelines
+- **Interoperable Data Models** – Open formats and shared metadta to enable reuse across sectors and domains
+- **Responsible AI Use** – embedding explainability, bias checks, and human-in-the-loop review into automated pipelines
 - **Sustainable Data Operations** – balancing innovation with environmental and financial cost awareness (FinOps)
 - **Ethical Reuse of Open Data** – ensuring public datasets are used in ways that build trust, not distort evidence
 
@@ -152,10 +148,8 @@ MacroCycle demonstrates the kind of data and AI governance challenges must be ad
 This project was built through collaboration between multiple AI agents:
 - **Replit Agent**: Core application development 
 - **Architect Agent**: Code review and architectural guidance
-- **Testing Agent**: End-to-end testing with Playwright
+- **Testing Agent**: Workflow validation
 - **OpenAI GPT-5 Agent**: Natural language research assistant
-
-This project demonstrates development of an AI tool built BY AI agents, showcasing both capabilities and limitations.
 
 ## 📝 Project Structure
 
