@@ -1,25 +1,26 @@
 # MacroCycle AI Agent
 
-An autonomous macro-economic intelligence assistant that integrates multiple public data feeds to analyze liquidity conditions, volatility measures, and key macro indicators for inferring business cycle stages.
+An autonomous macro-economic intelligence assistant that integrates multiple public data feeds to analyse key macro indicators, liquidity conditions and volatility measures for inferring business cycle stages.
 
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
 **Built for learning, analysis and experimentation - not finacial advice**
 
 ## 🎯 What Does It Do?
 
-MacroCycle demonstrates the potential of AI-agent orchestration for real-time economic data management:
+MacroCycle demonstrates the potential of an AI-driven macro-intelligence agent — combining open data, structured reasoning, and explainable automation:
 
-- **Automates Key Metrics**: Continuously fetches and processes economic indicators from FRED, CBOE, and Yahoo Finance
-- **Infers & Analyzes**: Uses data-driven algorithms to classify business cycle phases (Expansion, Peak, Contraction, Trough) with confidence scoring
-- **Natural Language Query**: Powered by OpenAI GPT-5, the AI research agent answers questions about economic data and market conditions
-- **Self-Service Analysis**: Enables policymakers, academics, and investors to explore macro-economic relationships interactively
+- **Automate Key Metrics**: Continuously fetches and processes economic indicators from FRED, CBOE, and Yahoo Finance
+- **Infers & Analyses**: Uses algorithms to classify business-cycle phases (Expansion, Peak, Contraction, Trough) using rule-based logic and confidence scoring
+- **Generates Natural Language Answers**: Uses OpenAI’s LLM to summarise macro conditions and answer plain-English questionss
+- **Enables Self-Service Analysis**: Let diverse users with varying knowledge levels to explore macro-economic relationships interactively
+- **Ensures Reprducability and Transparency**: Built on open data, versioned outputs, and a serverless, modular architecture orchestrated through GitHub Actions.
 
 ## 🏗️ Key Features
 
 ### 📊 Dashboard
 - **6 Themed Tabs**: Business Cycle, Macro Economics, Liquidity & Credit, Market Sentiment, Market Structure, Sectors & Assets
 - **Real-time Indicators**: GDP, unemployment, inflation, ISM PMI, yield curves, VIX, M2 money supply, and more
-- **Interactive Visualizations**: Powered by Plotly for publication-quality charts
+- **Interactive Visualisations**: Powered by Plotly for publication-quality charts
 
 ### 🤖 AI Research Agent
 - **Autonomous Actions**: AI can fetch data, create visualizations, and suggest navigation autonomously
@@ -188,4 +189,3 @@ This project is for educational and research purposes. Please ensure compliance 
 
 **Questions or Feedback?** Connect with [Bandhu Das on LinkedIn](https://www.linkedin.com/in/ibpdas/)
 
-*Built with ❤️ using Streamlit, Plotly, and OpenAI*
