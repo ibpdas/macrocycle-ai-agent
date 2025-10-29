@@ -1,11 +1,11 @@
-# MacroCycle AI Agent
+## MacroCycle AI Agent
 
 An autonomous macro-economic intelligence assistant that integrates multiple public data feeds to analyse key macro indicators, liquidity conditions and volatility measures for inferring business cycle stages.
 
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
 **Built for learning, analysis and experimentation - not finacial advice**
 
-**Purpose**
+## Purpose
 
 MacroCycle was developed as a testbed for AI agent capability, data infrastructure, and ethical governance — exploring how autonomous, explainable systems can support evidence-based decision-making.
 
