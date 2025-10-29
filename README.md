@@ -3,7 +3,7 @@
 An autonomous macro-economic intelligence assistant that integrates multiple public data feeds to analyze liquidity conditions, volatility measures, and key macro indicators for inferring business cycle stages.
 
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
-**Developed as part of the Imperial AI Policy Fellowship**
+**Built for learning, analysis and experimentation - not finacial advice**
 
 ## 🎯 What Does It Do?
 
