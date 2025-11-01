@@ -86,7 +86,7 @@ MacroCycle follows the principles of **responsible data and AI use**:
 
 ---
 
-## 🔬 Prototype Learnings & Data Policy Insights  
+## Prototype Learnings & Data Policy Insights  
 
 **MacroCycle** demonstrates that responsible autonomy can be achieved without complex infrastructure.  
 Its modular, transparent design provides practical lessons for scaling data-agent architectures across government contexts.
@@ -119,8 +119,8 @@ It shows how **bounded autonomy**, **provenance**, and **human oversight** can b
 | Phase | Focus | Target Milestone |
 |-------|--------|-----------------|
 | **Phase 1** | Integrate vector-database retrieval and historical context memory to enable pattern recognition and contextual recall | **Level 3 – Conditional Autonomy** |
-| **Phase 2** | Reproduce the architecture with environmental datasets (e.g. circular economy, waste, water quality) to test cross-domain reasoning and decision support | **Multi-Domain Data Agent** |
-| **Phase 3** | Introduce an **Explainable AI and Governance Dashboard** that visualises data lineage, confidence levels, and human-oversight checkpoints — enabling safe, transparent use of AI-generated insights within real-world policy experiments | **Policy Pilot Readiness – Governed Autonomy** |
+| **Phase 2** | Reproduce the architecture with open environmental datasets (e.g. circular economy, waste, water, food, biodiversity, green finance etc) to test cross-domain reasoning and decision support | **Multi-Domain Data Agent** |
+| **Phase 3** | Introduce an **Explainable AI and Governance Dashboard** that visualises data lineage, confidence levels, and human-oversight checkpoints — enabling safe, transparent use of AI generated insights within real world policy experiments | **Policy Pilot Readiness – Governed Autonomy** |
 
 
 ---
@@ -132,8 +132,7 @@ This prototype was developed as part of a broader learning and research journey 
 Special thanks to:  
 - **[Imperial College London – AI Policy Fellowship](https://www.imperial.ac.uk/ai-policy-fellowship/)**  
   for providing the academic and reflective environment that shaped this project’s focus on AI literacy, ethics, and public sector applicability.  
-- **Sue Bateman – Chief Data Officer, Defra**,  
-  for the research question, mentorship, and developmental guidance.  
+- **Sue Bateman – Chief Data Officer, Defra**, for the research question, mentorship, and developmental guidance.  
 - **HKUST Dial** for curating the *Awesome Data Agents* repository, which inspired the architectural framing of this Level-2 prototype.  
 
 
