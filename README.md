@@ -1,5 +1,16 @@
 ## MacroCycle AI Agent
 
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/HKUSTDial/awesome-data-agents)
+[![Open Source](https://img.shields.io/badge/status-open--source-brightgreen.svg)](https://github.com/ibpdas/macrocycle-ai-agent)
+[![License](https://img.shields.io/badge/license-educational-blue.svg)](#license)
+
+> **Aligned with:** [HKUST Dial — Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents)  
+> A curated repository of research and open-source projects exploring autonomous data-analysis agents.  
+
+> **MacroCycle** is a *Level-2 open-source prototype* demonstrating lightweight, reproducible, and ethical data-agent architecture — inspired by the taxonomy proposed in Zhu et al. (2025).  
+
+---
+
 An autonomous macro-economic intelligence assistant that integrates multiple public data feeds to analyse key macro indicators, liquidity conditions and volatility measures for inferring business cycle stages.
 
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
