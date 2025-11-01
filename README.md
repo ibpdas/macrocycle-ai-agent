@@ -11,7 +11,7 @@
 
 ---
 
-An autonomous macro-economic intelligence assistant that integrates multiple public data feeds to analyse key macro indicators, liquidity conditions and volatility measures for inferring business cycle stages.
+An autonomous **macro-economic intelligence assistant** that integrates multiple public data feeds to analyse key macro indicators, liquidity conditions and volatility measures for inferring business cycle stages.
 
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
 **Built for learning, analysis and experimentation - not finacial advice**
