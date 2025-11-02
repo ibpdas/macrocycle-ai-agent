@@ -24,8 +24,8 @@ MacroCycle integrates multiple open data feeds (FRED, CBOE, Yahoo Finance) with 
 It automates the retrieval, analysis, and explanation of key macroeconomic indicators to infer business cycle phases.  
 
 - [MacroCycle AI Agent Dashboard](https://macrocycle.replit.app/)  (Available until November 2025)
-**Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
-**Purpose:** Learning • Analysis • Ethical AI Experimentation  
+- **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)
+- **Purpose:** Ethical data and AI agent experimentation  
 
 ---
 
