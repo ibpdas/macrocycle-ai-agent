@@ -189,7 +189,7 @@ Special thanks to:
 |:--|:--|
 | [HKUST Dial – Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents) | Academic classification of MacroCycle as a *Level 2 reproducible, governed data agent.* |
 | [UK Government AI Playbook (CDDO, 2024)](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) | 10 principles for safe, ethical, and transparent AI — MacroCycle meets 4 fully, 6 partially. |
-| [Imperial College London AI Policy Fellowship](https://www.imperial.ac.uk/ai-policy-fellowship/) | Programme context for experimental design, governance reflection, and capability building. |
+| [Imperial College London AI Policy Fellowship](https://www.imperial.ac.uk/the-forum/courses-for-policymakers/fellowships/2025-fellows/) | Programme context for experimental design, governance reflection, and capability building. |
 
 ---
 
