@@ -4,25 +4,25 @@
 [![License](https://img.shields.io/badge/license-educational-blue.svg)](#license)
 
 > **Aligned with:** [HKUST Dial — Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents)  
-> *A curated repository of research and open-source projects exploring autonomous data-analysis agents.*  
+> *A curated repository of research and open-source projects exploring autonomous data agents.*  
 >
-> **MacroCycle** is a *Level-2 open-source prototype* demonstrating lightweight, reproducible, and ethical data-agent architecture — inspired by the taxonomy proposed in Zhu et al. (2025).
+> **MacroCycle** is a *Level 2 open source prototype* demonstrating lightweight, reproducible, and ethical data agent — inspired by the taxonomy proposed in Zhu et al. (2025).
 
 ---
 
 ## Motivation  
 
-Traditional macroeconomic dashboards are static and descriptive.  
+Traditional macroeconomic inidicators are static and descriptive.  
 **MacroCycle AI Agent** tests a new approach — **AI driven data agents** that autonomously fetch, interpret, and explain macroeconomic signals in natural language.  
 
-The goal is to evaluate how autonomous, explainable, and reproducible systems can support **evidence based decision-making** and inform **AI and data governance** across domains — including environmental and sustainability missions within government.
+The goal is to evaluate how autonomous, explainable, and reproducible data agents can support **evidence based decision making** and inform **data governance** across domains — including environmental and sustainability missions.
 
 ---
 
 ## Overview  
 
 MacroCycle integrates multiple open data feeds (FRED, CBOE, Yahoo Finance) with a lightweight AI reasoning layer.  
-It automates the retrieval, analysis, and explanation of key macroeconomic indicators to infer business-cycle phases.  
+It automates the retrieval, analysis, and explanation of key macroeconomic indicators to infer business cycle phases.  
 
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
 **Purpose:** Learning • Analysis • Ethical AI Experimentation  
@@ -92,8 +92,8 @@ MacroCycle follows the principles of **responsible data and AI use**:
 Its modular, transparent design provides practical lessons for scaling data-agent architectures across government contexts.
 
 ### Key Learnings  
-- **Scalability & Architecture:** Lightweight, serverless setups can handle real-time open data at low cost.  
-- **Data Provenance:** JSON-based lineage tracking improves auditability and reuse.  
+- **Scalability & Architecture:** Lightweight, serverless setups can handle real-time open data at low cost. But may not scalble for complex and legacy datasets.   
+- **Data Provenance:** JSON based lineage tracking improves auditability and reuse.  
 - **Human Oversight:** Bounded autonomy with expert review ensures interpretability and trust.  
 - **FinOps & Sustainability:** API-driven design reduces compute cost and energy use.  
 - **Explainability:** Structured reasoning + natural-language summaries balance automation and transparency.
@@ -144,7 +144,7 @@ If referencing this project:
 
 > Das, B. (2025). *MacroCycle AI Agent – A Reproducible Data-Agent Prototype.*  
 > GitHub: https://github.com/ibpdas/macrocycle-ai-agent  
-> DOI: Pending 
+> DOI: Pending
 
 ---
 
