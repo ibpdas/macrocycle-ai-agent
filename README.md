@@ -113,55 +113,55 @@ It shows how **bounded autonomy**, **provenance**, and **human oversight** are e
 
 ---
 
-### Data Provenance & Management  
-**Challenge:** AI agents retrieve data from multiple APIs (FRED, CBOE, Yahoo Finance) without transparent lineage or timestamp verification  
-**MacroCycle Experience:** Several API endpoints returned legacy data with no clear update date  
-**Solution:** Caching layer (1hr economic, 30min market) reduces API costs; metadata tracking essential  
-**Governance:** Ethical AI requires recording data source, update time, reuse conditions, and audit trails  
+### Data provenance
+- **Challenge:** AI agents retrieve data from multiple APIs (FRED, CBOE, Yahoo Finance) without transparent lineage or timestamp verification
+- **MacroCycle Experience:** Several API endpoints returned legacy data with no clear update date
+- **Solution:** Caching layer (1hr economic, 30min market) reduces API costs; metadata tracking essential
+- **Governance:** Ethical AI requires recording data source, update time, reuse conditions, and audit trails  
 <br>
 
-### Human Oversight & Accountability  
-**Challenge:** AI can generate plausible but incorrect economic interpretations; responsibility must remain human  
-**Solution:** Insights framed as "historical patterns," not predictions; disclaimers prominent  
-**Reality:** Every output requires interpretation; every design choice carries ethical implications  
-**Governance:** Mandatory human-in-the-loop validation—from data selection to publication—is essential for trustworthy AI  
+### Human oversight  
+- **Challenge:** AI can generate plausible but incorrect economic interpretations; responsibility must remain human
+- **Solution:** Insights framed as "historical patterns," not predictions; disclaimers prominent
+- **Reality:** Every output requires interpretation; every design choice carries ethical implications
+- **Governance:** Mandatory human-in-the-loop validation—from data selection to publication—is essential for trustworthy AI  
 <br>
 
-### FinOps & Sustainability  
-**Challenge:** API costs can scale unpredictably; running multiple AI agents reveals the environmental cost of computation  
-**MacroCycle Experience:** High compute use makes FinOps both a financial AND ethical issue  
-**Solution:** Token limits, caching, and quota warnings prevent runaway costs  
-**Governance:** Budget caps, cost attribution, and energy monitoring embedded in every AI sandbox  
+### Costs  
+- **Challenge:** API costs can scale unpredictably; running multiple AI agents reveals the environmental cost of computation
+- **MacroCycle Experience:** High compute use makes FinOps both a financial AND ethical issue
+- **Solution:** Token limits, caching, and quota warnings prevent runaway costs
+- **Governance:** Budget caps, cost attribution, and energy monitoring embedded in every AI sandbox  
 <br>
 
-### Scalability & Architecture  
-**Challenge:** Replit or Streamlit architecture not suited for high-concurrency production use  
-**Solution:** Prototype demonstrates concepts; production requires API-first design  
-**Governance:** Performance SLAs and load testing mandatory before deployment  
+### Scalability 
+- **Challenge:** Replit or Streamlit architecture not suited for high-concurrency production use
+- **Solution:** Prototype demonstrates concepts; production requires API-first design
+- **Governance:** Performance SLAs and load testing mandatory before deployment  
 <br>
 
-### Security & Compliance  
-**Challenge:** API keys and data access require protection  
-**Solution:** Environment-based secrets; no personal data stored  
-**Governance:** SOC2 / ISO27001 compliance required for production systems  
+### Security   
+- **Challenge:** API keys and data access require protection
+- **Solution:** Environment-based secrets; no personal data stored
+- **Governance:** SOC2 / ISO27001 compliance required for production systems  
 <br>
 
-### Explainability & Transparency  
-**Challenge:** AI agents often provide outputs without explaining derivations  
-**Risk:** Without an audit trail, confidence and accountability erode quickly  
-**Governance:** Future iterations should include “explainability traces” summarising data sources and assumptions  
+### Explainability & transparency  
+- **Challenge:** AI agents often provide outputs without explaining derivations
+- **Risk:** Without an audit trail, confidence and accountability erode quickly
+- **Governance:** Future iterations should include “explainability traces” summarising data sources and assumptions  
 <br>
 
-### Representation & Bias  
-**Challenge:** Open datasets over-represent developed economies, under-represent emerging markets  
-**Risk:** Introduces bias into analysis and interpretation  
-**Governance:** Ethical practice demands deliberate bias detection and contextual explanation  
+### Representation & bias  
+- **Challenge:** Open datasets over represent developed or known domains, under represent less researched or understood domains
+- **Risk:** Introduces bias into analysis and interpretation
+- **Governance:** Ethical practice demands deliberate bias detection and contextual explanation  
 <br>
 
-### Synthetic Data Boundaries  
-**Challenge:** When does synthetic data cross from simulation to potential misuse?  
-**MacroCycle Experience:** Synthetic datasets helpful for scenario testing but require clear labelling and deletion rules  
-**Governance:** Explicit labelling prevents confusion with official statistics  
+### Synthetic data boundaries  
+- **Challenge:** When does synthetic data cross from simulation to potential misuse?
+- **MacroCycle Experience:** Synthetic datasets helpful for scenario testing but require clear labelling and deletion rules
+- **Governance:** Explicit labelling prevents confusion with official statistics  
 
 ---
 
