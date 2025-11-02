@@ -10,7 +10,7 @@
 
 ---
 
-## Motivation  
+## What it does? 
 
 **MacroCycle AI Agent** tests how data agents can autonomously fetch, interpret, and explain macroeconomic signals in natural language.  
 
