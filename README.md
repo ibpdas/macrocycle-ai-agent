@@ -12,8 +12,7 @@
 
 ## Motivation  
 
-Traditional macroeconomic inidicators are static and descriptive.  
-**MacroCycle AI Agent** tests a new approach — **AI driven data agents** that autonomously fetch, interpret, and explain macroeconomic signals in natural language.  
+**MacroCycle AI Agent** tests how data agents can autonomously fetch, interpret, and explain macroeconomic signals in natural language.  
 
 The goal is to evaluate how autonomous, explainable, and reproducible data agents can support **evidence based decision making** and inform **data governance** across domains, including environmental and sustainability missions.
 
@@ -24,6 +23,7 @@ The goal is to evaluate how autonomous, explainable, and reproducible data agent
 MacroCycle integrates multiple open data feeds (FRED, CBOE, Yahoo Finance) with a lightweight AI reasoning layer.  
 It automates the retrieval, analysis, and explanation of key macroeconomic indicators to infer business cycle phases.  
 
+- [MacroCycle AI Agent Dashboard](https://macrocycle.replit.app/)  (Available until November 2025)
 **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)  
 **Purpose:** Learning • Analysis • Ethical AI Experimentation  
 
@@ -51,7 +51,7 @@ It automates the retrieval, analysis, and explanation of key macroeconomic indic
 |-----------|-------------|
 | **Autonomous Agent Workflow** | Fetch → Analyse → Summarise → Publish automatically. |
 | **LLM Reasoning** | Generates contextual macro-economic insights with confidence scoring. |
-| **Self-Service Dashboard** | Streamlit UI for exploration and trend comparison. |
+| **Self-Service Dashboard** | Natural language exploration and trend comparison. |
 | **JSON Data Contracts** | Ensures transparency, auditability, and reproducibility. |
 | **Serverless Architecture** | Hosted via Replit, Streamlit Cloud + GitHub Actions. |
 
@@ -75,6 +75,9 @@ MacroCycle follows the principles of **responsible data and AI use**:
 - **Reproducibility** — Workflows and outputs version-controlled.  
 - **Accountability** — Human-in-the-loop review before publication.  
 - **Proportionality** — Designed to support, not replace, expert analysis.  
+
+## Methodology & Data Quality 
+
 
 ---
 
@@ -133,10 +136,9 @@ It shows how **bounded autonomy**, **provenance**, and **human oversight** can b
 This prototype was developed as part of a broader learning and research journey combining data strategy, data and AI governance, and applied experimentation.  
 
 Special thanks to:  
-- **[Imperial College London – AI Policy Fellowship](https://www.imperial.ac.uk/ai-policy-fellowship/)**  
-  for providing the academic and reflective environment that shaped this project’s focus on AI literacy, ethics, and public sector applicability.  
-- **Sue Bateman – Chief Data Officer, Defra**, for the research question, mentorship, and developmental guidance.  
-- **HKUST Dial** for curating the *Awesome Data Agents* repository, which inspired the architectural framing of this Level-2 prototype.  
+- **[Imperial College London – AI Policy Fellowship](https://www.imperial.ac.uk/ai-policy-fellowship/)**  for providing the academic and reflective environment that shaped this project’s focus on AI literacy, ethics, and public sector applicability.  
+- **Sue Bateman – Chief Data Officer, Defra**, for the research question and developmental guidance.  
+- **HKUST Dial** for curating the *Awesome Data Agents* repository, which inspired the architectural framing of this Level 2 prototype.  
 
 
 ---
@@ -153,7 +155,6 @@ If referencing this project:
 
 ## Links & Resources  
 
-- [MacroCycle AI Agent Dashboard](https://macrocycle.replit.app/)  
 - [HKUST Dial – Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents)  
 - [Bandhu Das FCCA – LinkedIn](https://www.linkedin.com/in/ibpdas/)  
 
