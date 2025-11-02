@@ -15,7 +15,7 @@
 Traditional macroeconomic inidicators are static and descriptive.  
 **MacroCycle AI Agent** tests a new approach — **AI driven data agents** that autonomously fetch, interpret, and explain macroeconomic signals in natural language.  
 
-The goal is to evaluate how autonomous, explainable, and reproducible data agents can support **evidence based decision making** and inform **data governance** across domains — including environmental and sustainability missions.
+The goal is to evaluate how autonomous, explainable, and reproducible data agents can support **evidence based decision making** and inform **data governance** across domains, including environmental and sustainability missions.
 
 ---
 
