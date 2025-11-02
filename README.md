@@ -109,7 +109,7 @@ MacroCycle follows the principles of **Aquabook**:
 ## Prototype Learnings & Policy Insights  
 
 **MacroCycle** was built to understand and demonstrate both the potential and challenges of AI-driven data agents.  
-It shows how **bounded autonomy**, **provenance**, and **human oversight** are essential for responsible innovation. It highlights the importance of **metdadata, data lineage, interoperability, and human oversight** as prerequisites for deploying AI tools safely in public sector domains.  
+It shows how **bounded autonomy**, **provenance**, and **human oversight** are essential for responsible innovation. It highlights the importance of **data acqusition, metdadata, data lineage, interoperability** as prerequisites for deploying AI tools safely and effectively in public sector domains.  
 
 ---
 
@@ -117,51 +117,46 @@ It shows how **bounded autonomy**, **provenance**, and **human oversight** are e
 - **Challenge:** AI agents retrieve data from multiple APIs (FRED, CBOE, Yahoo Finance) without transparent lineage or timestamp verification
 - **MacroCycle Experience:** Several API endpoints returned legacy data with no clear update date
 - **Solution:** Caching layer (1hr economic, 30min market) reduces API costs; metadata tracking essential
-- **Governance:** Ethical AI requires recording data source, update time, reuse conditions, and audit trails  
-<br>
+- **Insight:** Effectice AI use requires recording data source, update time, reuse conditions, and audit trails  
 
 ### Human oversight  
 - **Challenge:** AI can generate plausible but incorrect economic interpretations; responsibility must remain human
 - **Solution:** Insights framed as "historical patterns," not predictions; disclaimers prominent
 - **Reality:** Every output requires interpretation; every design choice carries ethical implications
-- **Governance:** Mandatory human-in-the-loop validation—from data selection to publication—is essential for trustworthy AI  
-<br>
+- **Insight:** Mandatory human-in-the-loop validation from data selection to publication is essential for effective AI use. Furthermore, decision intelligence skills, prompt engineering and data and AI literacy as part of wider workforece development. 
 
 ### Costs  
 - **Challenge:** API costs can scale unpredictably; running multiple AI agents reveals the environmental cost of computation
 - **MacroCycle Experience:** High compute use makes FinOps both a financial AND ethical issue
 - **Solution:** Token limits, caching, and quota warnings prevent runaway costs
-- **Governance:** Budget caps, cost attribution, and energy monitoring embedded in every AI sandbox  
-<br>
+- **Insight:** Budget caps, cost attribution, and energy monitoring embedded in every AI sandbox  
 
 ### Scalability 
-- **Challenge:** Replit or Streamlit architecture not suited for high-concurrency production use
-- **Solution:** Prototype demonstrates concepts; production requires API-first design
-- **Governance:** Performance SLAs and load testing mandatory before deployment  
-<br>
+- **Challenge:** Rapid fail-safe, sandboxing environment with advanceed capabilites are missing.
+- **MarcoCycle Experience:** Replit or Streamlit architecture not suited for high-concurrency production use
+- **Solution:** Prototype demonstrates concepts; production requires API-first design; well designed sandbox environment with fast access to advanced capabilites. 
+- **Insight:** Performance SLAs and load testing mandatory before deployment  
 
 ### Security   
 - **Challenge:** API keys and data access require protection
 - **Solution:** Environment-based secrets; no personal data stored
-- **Governance:** SOC2 / ISO27001 compliance required for production systems  
-<br>
+- **Insight:** ISO/IEC 42001 compliance required for production systems  
 
 ### Explainability & transparency  
 - **Challenge:** AI agents often provide outputs without explaining derivations
 - **Risk:** Without an audit trail, confidence and accountability erode quickly
 - **Governance:** Future iterations should include “explainability traces” summarising data sources and assumptions  
-<br>
+
 
 ### Representation & bias  
 - **Challenge:** Open datasets over represent developed or known domains, under represent less researched or understood domains
 - **Risk:** Introduces bias into analysis and interpretation
 - **Governance:** Ethical practice demands deliberate bias detection and contextual explanation  
-<br>
 
 ### Synthetic data boundaries  
 - **Challenge:** When does synthetic data cross from simulation to potential misuse?
 - **MacroCycle Experience:** Synthetic datasets helpful for scenario testing but require clear labelling and deletion rules
-- **Governance:** Explicit labelling prevents confusion with official statistics  
+- **Insight:** Explicit labelling prevents confusion with official statistics  
 
 ---
 
@@ -170,8 +165,8 @@ It shows how **bounded autonomy**, **provenance**, and **human oversight** are e
 | Phase | Focus | Target Milestone |
 |-------|--------|-----------------|
 | **Phase 1** | Integrate vector database retrieval and historical context memory for pattern recognition and recall (using Streamlit) | **Level 3 – Conditional Autonomy** |
-| **Phase 2** | Reproduce the architecture with open environmental datasets (circular economy, waste, water, biodiversity, green finance) to test cross-domain reasoning (using more scalable environment beyond Streamlit)| **Multi-Domain Data Agent** |
-| **Phase 3** | Introduce an **Explainable AI and Governance Dashboard** visualising lineage, confidence, and oversight checkpoints — enabling safe use within live policy pilots | **Policy Pilot Readiness – Governed Autonomy** |
+| **Phase 2** | Reproduce the architecture with open environmental datasets (circular economy, waste, water, biodiversity, green finance) to test cross-domain reasoning (using internal platform like DASH)| **Multi-Domain Data Agent** |
+| **Phase 3** | Introduce an 'Explainable AI and Data Governance Dashboard' visualising lineage, confidence, and oversight checkpoints — enabling safe use within live policy pilots | **Policy Pilot Readiness – Governed Autonomy** |
 
 ---
 
