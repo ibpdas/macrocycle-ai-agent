@@ -153,7 +153,7 @@ If referencing this project:
 
 ## Links & Resources  
 
-- [MacroCycle AI Agent Dashboard](https://macro-cycle.streamlit.app/)  
+- [MacroCycle AI Agent Dashboard](https://macrocycle.replit.app/)  
 - [HKUST Dial – Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents)  
 - [Bandhu Das FCCA – LinkedIn](https://www.linkedin.com/in/ibpdas/)  
 
