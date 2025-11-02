@@ -1,4 +1,4 @@
-# MacroCycle AI Agent  
+# MacroCycle AI Agent – A Reproducible Data Agent Prototype
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/HKUSTDial/awesome-data-agents)
 [![Open Source](https://img.shields.io/badge/status-open--source-brightgreen.svg)](https://github.com/ibpdas/macrocycle-ai-agent)
 [![License](https://img.shields.io/badge/license-educational-blue.svg)](#license)
@@ -12,48 +12,34 @@
 
 ## What it does? 
 
-**MacroCycle AI Agent** tests how data agents can autonomously fetch, interpret, and explain macroeconomic signals in natural language.  
+An autonomous **macro economic intelligence assistant** demonstrating the potential of **AI driven data agent** and responsible use. MacroCycle automates the collection, analysis, and explanation of key macro economic and market indicators to infer business cycle phases. Instead of manually searching for data, it orchestrates multiple open data feeds and provides transparent, explainable summaries using LLM reasoning.
 
-The goal is to evaluate how autonomous, explainable, and reproducible data agents can support **evidence based decision making** and inform **data governance** across domains, including environmental and sustainability missions.
-
----
-
-## Overview  
-
-MacroCycle integrates multiple open data feeds (FRED, CBOE, Yahoo Finance) with a lightweight AI reasoning layer.  
-It automates the retrieval, analysis, and explanation of key macroeconomic indicators to infer business cycle phases.  
+- **Automates Key Metrics** – Fetches and refreshes 50+ indicators from FRED, CBOE and Yahoo Finance  
+- **Infers & Analyses** – Classifies business cycle phases (Expansion / Peak / Contraction / Trough) with confidence scoring  
+- **Natural Language Queries** – Conversational interface powered by GPT-5 for context-aware economic Q&A  
+- **Self Service Dashboards** – Explore macro, market & sentiment data interactively
+- **Data Governance Insights** - Show data challenges to guide decision manking 
+---  
 
 - [MacroCycle AI Agent Dashboard](https://macrocycle.replit.app/)  (Available until November 2025)
 - **Created by:** [Bandhu Das FCCA](https://www.linkedin.com/in/ibpdas/)
-- **Purpose:** Ethical data and AI agent experimentation  
 
 ---
 
-## System Architecture  
+## Technical overview 
 
 **Pipeline Components**
-1. **Data Ingestion** – Fetch macro indicators (FRED, CBOE, Yahoo).  
+1. **Data Sources (structured + synthetic)** – Fetch macro indicators (FRED, CBOE, Yahoo) and derived indicators for missing data. 
 2. **Processing Layer** – Normalise and store indicators as structured JSON.  
-3. **Reasoning Layer** – OpenAI LLM summarises data and infers cycle phase.  
-4. **Interface Layer** – Replit / Streamlit dashboard for interactive visualisation.  
-5. **Automation Layer** – GitHub Actions handle daily agent execution.  
+3. **Reasoning Layer** – GPT-5 data agent with **agentic orchestration** (Research, Architect & Testing agents) 
+4. **Interface Layer** – Replit (current) → Streamlit (planned)  
+5. **Automation Layer** – GitHub Actions handle agent execution with a serverless architecture
+7. **Governance Layer** - JSON data contract documentation, human oversight, explainability and audit trail  
 
 > *Development note:*  
 > The MacroCycle prototype was built and tested using **Replit’s agentic development environment** for rapid iteration and code level experimentation.  
 > The application can also be self-served locally using the `app.py` file in this repository.  
-> A **Streamlit based interface** is planned for open, user-friendly deployment in later phases.
-
----
-
-## Key Features  
-
-| Category | Description |
-|-----------|-------------|
-| **Autonomous Agent Workflow** | Fetch → Analyse → Summarise → Publish automatically. |
-| **LLM Reasoning** | Generates contextual macro-economic insights with confidence scoring. |
-| **Self-Service Dashboard** | Natural language exploration and trend comparison. |
-| **JSON Data Contracts** | Ensures transparency, auditability, and reproducibility. |
-| **Serverless Architecture** | Hosted via Replit, Streamlit Cloud + GitHub Actions. |
+> A **Streamlit based interface** is planned for open, user friendly deployment in later phases.
 
 ---
 
@@ -67,7 +53,7 @@ It automates the retrieval, analysis, and explanation of key macroeconomic indic
 
 ---
 
-## Governance & Ethics  
+## Ethics  
 
 MacroCycle follows the principles of **responsible data and AI use**:
 
@@ -76,8 +62,13 @@ MacroCycle follows the principles of **responsible data and AI use**:
 - **Accountability** — Human-in-the-loop review before publication.  
 - **Proportionality** — Designed to support, not replace, expert analysis.  
 
-## Methodology & Data Quality 
+## Analytical methodology 
 
+- Rule based inference combining GDP, unemployment, inflation and PMI
+- Confidence scoring (0–100%) for interpretability
+- Historical backtesting across seven major cycles (2001–2023), aligned where applicable to NBER dating
+- Synthetic indicators (ISM PMI, Fear & Greed Index) are clearly labelled
+- Caching: 1h for economic series, 30m for market series; balances reproducibility and FinOps
 
 ---
 
@@ -92,40 +83,61 @@ MacroCycle follows the principles of **responsible data and AI use**:
 
 ---
 
-## Prototype Learnings & Data Policy Insights  
+## Prototype learnings & policy insights  
 
-**MacroCycle** demonstrates that responsible autonomy can be achieved without complex infrastructure.  
-Its modular, transparent design provides practical lessons for scaling data-agent architectures across government contexts.
+**MacroCycle** was built to understand and demonstrate both the potential and challenges of AI driven data agents. It shows how **bounded autonomy**, **provenance**, and **human oversight** are essential for responsible innovation. Critical insights for policymakers and practitioners.
 
-### Key Learnings  
-- **Scalability & Architecture:** Lightweight, serverless setups can handle real-time open data at low cost. But may not scalble for complex and legacy datasets.   
-- **Data Provenance:** JSON based lineage tracking improves auditability and reuse.  
-- **Human Oversight:** Bounded autonomy with expert review ensures interpretability and trust.  
-- **FinOps & Sustainability:** API-driven design reduces compute cost and energy use.  
-- **Explainability:** Structured reasoning + natural-language summaries balance automation and transparency.
+#### Data Provenance & Management
+**Challenge:** AI agents retrieve data from multiple APIs (FRED, CBOE, Yahoo Finance) without transparent lineage or timestamp verification  
+**MacroCycle Experience:** Several API endpoints returned legacy data with no clear update date  
+**Solution:** Caching layer (1hr economic, 30min market) reduces API costs; metadata tracking essential  
+**Governance:** Ethical AI requires recording data source, update time, reuse conditions, and audit trails
 
-### Data Policy Implications  
-MacroCycle highlights how technical design choices reinforce **data and AI policy principles**:  
-- **Transparent Lineage** – Trace every indicator and transformation for accountability.  
-- **Interoperable Models** – Use open formats and metadata standards for cross-department reuse.  
-- **Responsible AI Use** – Embed bias checks, explainability, and human-in-the-loop oversight.  
-- **Sustainable Data Operations** – Optimise for environmental and financial efficiency.  
-- **Ethical Reuse of Open Data** – Ensure public datasets are used to build trust, not distort evidence.
+#### Human Oversight & Accountability
+**Challenge:** AI can generate plausible but incorrect economic interpretations; even in automated pipelines, responsibility must remain human  
+**Solution:** All insights framed as "historical patterns," not predictions; disclaimers prominent  
+**Reality:** Every output requires interpretation; every design choice carries ethical implications  
+**Governance:** Mandatory human-in-the-loop validation—from data selection to publication—is essential for fair and trustworthy AI
 
+#### FinOps & Sustainability
+**Challenge:** API costs can scale unpredictably; running multiple AI agents reveals environmental cost of computation  
+**MacroCycle Experience:** High energy and compute consumption makes FinOps both a financial AND ethical issue  
+**Solution:** Token limits, caching, and quota warnings prevent runaway costs  
+**Governance:** Budget caps, cost attribution, and energy monitoring should be embedded in every AI sandbox and production environment
 
-## Research – Practice Reflection  
+#### Scalability & Architecture
+**Challenge:** Replit or Streamlit architecture not suited for high-concurrency production use  
+**Solution:** This prototype demonstrates concepts; production requires API first architecture  
+**Governance:** Performance SLAs and load testing mandatory before public deployment
 
-MacroCycle bridges **research and practice**, applying the Zhu et al. (2025) *Data Agents* taxonomy to a real-world, open-data use case.  
-It shows how **bounded autonomy**, **provenance**, and **human oversight** can be operationalised in a low cost, reproducible prototype relevant to responsible data management and use.
+#### Security & Compliance
+**Challenge:** API keys, user data, and financial information require protection  
+**Solution:** Environment-based secrets; no personal data storage  
+**Governance:** SOC2 / ISO27001 compliance required for production systems
+
+#### Explainability & Transparency
+**Challenge:** AI agents often provide outputs without explaining how results were derived  
+**Risk:** Without an audit trail, confidence and accountability erode quickly  
+**Governance:** Future iterations should include "explainability traces" summarising data sources, assumptions, and transformations used
+
+#### Representation & Bias
+**Challenge:** Open datasets over represent well documented markets or domains, but under represent less understood or researched domains.
+**Risk:** Introduces bias into model training and interpretation 
+**Governance:** Ethical practice demands deliberate bias detection and, where possible, weighting or contextual explanation
+
+#### Synthetic Data Boundaries
+**Challenge:** When does synthetic data cross the line from simulation to potential misuse?  
+**MacroCycle Experience:** Synthetic datasets helpful for scenario testing but needed clear labelling and deletion rules  
+**Governance:** Explicit labelling essential to avoid confusion with official statistics
 
 ---
 
-## Potential Roadmap Beyond Prototype  
+## Potential Roadmap Beyond Prototype  (to demonstrate the art of possible further)
 
 | Phase | Focus | Target Milestone |
 |-------|--------|-----------------|
-| **Phase 1** | Integrate vector-database retrieval and historical context memory to enable pattern recognition and contextual recall | **Level 3 – Conditional Autonomy** |
-| **Phase 2** | Reproduce the architecture with open environmental datasets (e.g. circular economy, waste, water, food, biodiversity, green finance etc) to test cross-domain reasoning and decision support | **Multi-Domain Data Agent** |
+| **Phase 1** | Integrate vector database retrieval and historical context memory to enable pattern recognition and contextual recall in Streamlit tech environment | **Level 3 – Conditional Autonomy** |
+| **Phase 2** | Reproduce the architecture with open environmental datasets (e.g. circular economy, waste, water, food, biodiversity, green finance etc) to test cross-domain reasoning and decision support in more scalable tech environment (beyond Streamlit) | **Multi-Domain Data Agent** |
 | **Phase 3** | Introduce an **Explainable AI and Governance Dashboard** that visualises data lineage, confidence levels, and human-oversight checkpoints — enabling safe, transparent use of AI generated insights within real world policy experiments | **Policy Pilot Readiness – Governed Autonomy** |
 
 
@@ -147,23 +159,18 @@ Special thanks to:
 
 If referencing this project:
 
-> Das, B. (2025). *MacroCycle AI Agent – A Reproducible Data-Agent Prototype.*  
+> Das, B. (2025). *MacroCycle AI Agent – A Reproducible Data Agent Prototype.*  
 > GitHub: https://github.com/ibpdas/macrocycle-ai-agent  
-> DOI: Pending
+> DOI: Not available 
 
 ---
 
-## Links & Resources  
+## Disclaimer
 
-- [HKUST Dial – Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents)  
-- [Bandhu Das FCCA – LinkedIn](https://www.linkedin.com/in/ibpdas/)  
-
----
-
-## License  
-
-Educational and research use only.  
-Comply with all third-party API terms (FRED, OpenAI, Yahoo Finance).
+- MacroCycle is a prototype for educational and research purposes only.
+- It does not constitute investment or financial advice.
+- All outputs should be independently verified before use.
+- Comply with all third-party API terms (FRED, OpenAI, Yahoo Finance).
 
 ---
 
