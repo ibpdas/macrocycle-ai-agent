@@ -12,7 +12,9 @@
 
 ## What it does? 
 
-An autonomous **macro economic intelligence assistant** demonstrating the potential of **AI driven data agent** and responsible use. MacroCycle automates the collection, analysis, and explanation of key macro economic and market indicators to infer business cycle phases. Instead of manually searching for data, it orchestrates multiple open data feeds and provides transparent, explainable summaries using LLM reasoning.
+An autonomous **macro economic intelligence assistant** demonstrating the potential of **AI driven data agent** and responsible use. 
+
+It automates the collection, analysis, and explanation of key macro economic and market indicators to infer business cycle phases. Instead of manually searching for data, it orchestrates multiple open data feeds and provides transparent, explainable summaries using LLM reasoning. Key features:
 
 - **Automates Key Metrics** – Fetches and refreshes 50+ indicators from FRED, CBOE and Yahoo Finance  
 - **Infers & Analyses** – Classifies business cycle phases (Expansion / Peak / Contraction / Trough) with confidence scoring  
