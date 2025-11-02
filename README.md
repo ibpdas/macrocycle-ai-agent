@@ -31,14 +31,17 @@ It automates the retrieval, analysis, and explanation of key macroeconomic indic
 
 ## System Architecture  
 
-![MacroCycle Architecture](docs/macrocycle_architecture.png)
-
 **Pipeline Components**
 1. **Data Ingestion** – Fetch macro indicators (FRED, CBOE, Yahoo).  
 2. **Processing Layer** – Normalise and store indicators as structured JSON.  
 3. **Reasoning Layer** – OpenAI LLM summarises data and infers cycle phase.  
-4. **Interface Layer** – Streamlit dashboard for interactive visualisation.  
+4. **Interface Layer** – Replit / Streamlit dashboard for interactive visualisation.  
 5. **Automation Layer** – GitHub Actions handle daily agent execution.  
+
+> *Development note:*  
+> The MacroCycle prototype was built and tested using **Replit’s agentic development environment** for rapid iteration and code level experimentation.  
+> The application can also be self-served locally using the `app.py` file in this repository.  
+> A **Streamlit based interface** is planned for open, user-friendly deployment in later phases.
 
 ---
 
