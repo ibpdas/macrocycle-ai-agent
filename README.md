@@ -30,9 +30,9 @@
 
 ## What It Does  
 
-**MacroCycle AI Agent** is an autonomous **macroeconomic intelligence prototype** that explores how AI driven data agents can safely automate open data analysis while maintaining human accountability and ethical guardrails.  
-
-It was developed in sandboxed enviroment as part of the **Imperial College London AI Policy Fellowship** to test how autonomous data agents could be adapted to public sector data and policy contexts, including applications in **Defra’s data ecosystem** (e.g., circular economy, waste, and environmental protection).
+**MacroCycle AI Agent** is an autonomous macroeconomic intelligence prototype built in a sandboxed environment as part of the Imperial College London AI Policy Fellowship.
+It demonstrates how AI driven data agents can safely automate open-data analysis while maintaining human accountability and ethical guardrails.
+The prototype tests how such agents could be adapted to public sector data ecosystems, including potential applications across Defra’s circular economy, waste, and environmental protection domains.
 
 Key features and focus areas:
 
