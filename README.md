@@ -31,10 +31,12 @@
 ## Purpose  
 
 **MacroCycle AI Agent** is an autonomous macroeconomic intelligence prototype built in a sandboxed environment as part of the Imperial College London AI Policy Fellowship.
-It demonstrates how AI-driven data agents can safely automate open data analysis while maintaining human accountability and ethical guardrails.
+
+It demonstrates how AI driven data agents can safely automate open data analysis while maintaining human accountability and ethical guardrails.
+
 The prototype applies world leading economic data from the United States to explore how such agents could be adapted to UK public sector data ecosystems, including potential applications across circular economy, green finance, and environmental protection domains.
 
-Key features and focus areas:
+**Key features and focus areas**:
 
 - **Automation of Key Metrics** – Fetches and analyses 50+ economic indicators (FRED, CBOE, Yahoo Finance).  
 - **Structured Reasoning** – Classifies business cycle phases with confidence scoring and metadata logging.  
@@ -91,7 +93,7 @@ MacroCycle follows the principles of **Data Ethics Framework (2020)**:
 
 MacroCycle follows the principles of **AQuA book (2025)**:
 
-- Rule-based inference combining GDP, unemployment, inflation, and PMI  
+- Rule based inference combining GDP, unemployment, inflation, and PMI  
 - Confidence scoring (0–100%) for interpretability  
 - Historical backtesting across seven major cycles (2001–2023), aligned where applicable to NBER dating  
 - Synthetic indicators (ISM PMI, Fear & Greed Index) are clearly labelled  
@@ -112,55 +114,19 @@ MacroCycle follows the principles of **AQuA book (2025)**:
 
 ## Prototype Learnings & Policy Insights  
 
-**MacroCycle** was built to understand and demonstrate both the potential and challenges of AI-driven data agents.  
-It shows how **bounded autonomy**, **provenance**, and **human oversight** are essential for responsible innovation. It highlights the importance of **data acqusition, metdadata, data lineage, interoperability** as prerequisites for deploying AI tools safely and effectively in public sector domains.  
+MacroCycle was built to understand and demonstrate both the **potential and challenges** of AI driven data agents.  
+It shows how **bounded autonomy, provenance, and human oversight** are essential for responsible innovation and how **data acquisition, metadata, lineage, and interoperability** are prerequisites for deploying AI tools safely and effectively across public sector domains.
 
----
-
-### Data provenance
-- **Challenge:** AI agents retrieve data from multiple APIs (FRED, CBOE, Yahoo Finance) without transparent lineage or timestamp verification
-- **MacroCycle Experience:** Several API endpoints returned legacy data with no clear update date
-- **Solution:** Caching layer (1hr economic, 30min market) reduces API costs; metadata tracking essential
-- **Insight:** Effectice AI use requires recording data source, update time, reuse conditions, and audit trails  
-
-### Human oversight  
-- **Challenge:** AI can generate plausible but incorrect economic interpretations; responsibility must remain human
-- **Solution:** Insights framed as "historical patterns," not predictions; disclaimers prominent
-- **Reality:** Every output requires interpretation; every design choice carries ethical implications
-- **Insight:** Mandatory human-in-the-loop validation from data selection to publication is essential for effective AI use. Furthermore, decision intelligence skills, prompt engineering and data and AI literacy as part of wider workforece development. 
-
-### Costs  
-- **Challenge:** API costs can scale unpredictably; running multiple AI agents reveals the environmental cost of computation
-- **MacroCycle Experience:** High compute use makes FinOps both a financial AND ethical issue
-- **Solution:** Token limits, caching, and quota warnings prevent runaway costs
-- **Insight:** Budget caps, cost attribution, and energy monitoring embedded in every AI sandbox  
-
-### Scalability 
-- **Challenge:** Rapid fail-safe, sandboxing environment with advanceed capabilites are missing.
-- **MarcoCycle Experience:** Replit or Streamlit architecture not suited for high-concurrency production use
-- **Solution:** Prototype demonstrates concepts; production requires API-first design; well designed sandbox environment with fast access to advanced capabilites. 
-- **Insight:** Performance SLAs and load testing mandatory before deployment  
-
-### Security   
-- **Challenge:** API keys and data access require protection
-- **Solution:** Environment-based secrets; no personal data stored
-- **Insight:** ISO/IEC 42001 compliance required for production systems  
-
-### Explainability & transparency  
-- **Challenge:** AI agents often provide outputs without explaining derivations
-- **Risk:** Without an audit trail, confidence and accountability erode quickly
-- **Governance:** Future iterations should include “explainability traces” summarising data sources and assumptions  
-
-
-### Representation & bias  
-- **Challenge:** Open datasets over represent developed or known domains, under represent less researched or understood domains
-- **Risk:** Introduces bias into analysis and interpretation
-- **Governance:** Ethical practice demands deliberate bias detection and contextual explanation  
-
-### Synthetic data boundaries  
-- **Challenge:** When does synthetic data cross from simulation to potential misuse?
-- **MacroCycle Experience:** Synthetic datasets helpful for scenario testing but require clear labelling and deletion rules
-- **Insight:** Explicit labelling prevents confusion with official statistics  
+| **Theme** | **Core Challenge / Assumption** | **MacroCycle Experience** | **MacroCycle Solution** | **Policy Insight for Data & AI Strategy** |
+|:--|:--|:--|:--|:--|
+| 1 **Data Provenance** | AI agents retrieved data from multiple APIs (FRED, CBOE, Yahoo Finance) with no transparent lineage or timestamps. | Several endpoints returned legacy data with unclear update dates. | Introduced caching (1 hr economic / 30 min market) and metadata logging to record freshness and provenance. | Effective AI use requires audit trails for source, timestamp, reuse conditions, and version control — foundational for trustworthy AI. |
+| 2 **Human Oversight** | AI can generate plausible but incorrect economic interpretations; responsibility must remain human. | Automated outputs required interpretation and ethical framing. | Insights presented as *historical patterns*, not predictions, with disclaimers and validation. | Human-in-the-loop oversight is essential. Decision intelligence skills, prompt engineering, and Data and AI literacy must be part of wider workforce development. |
+| 3 **Cost & Sustainability (FinOps)** | API and compute costs can scale unpredictably; multi-agent use adds environmental cost. | High compute demand highlighted the ethical dimension of cost. | Token limits, caching, and quota warnings introduced to prevent overuse. | Treat FinOps as both financial and ethical governance: embed budget caps, cost attribution, and energy monitoring in every AI sandbox. |
+| 4 **Scalability & Infrastructure** | Rapid, fail-safe sandboxing with advanced capabilities is limited in current tools. | Replit / Streamlit not suited to high concurrency production. | Used sandbox for concept validation; recommended API-first, modular architecture for production. | Sandbox environments with secure, scalable access to advanced AI are vital precursors to enterprise deployment; require performance SLAs and load testing. |
+| 5 **Security & Compliance** | API keys and data connections risk exposure. | Managed credentials manually during prototyping. | Used environment-based secrets; avoided personal data storage. | Move toward ISO/IEC 42001 or equivalent industry and wider government-led compliance for AI system assurance. |
+| 6 **Explainability & Transparency** | AI agents can output results without showing how they were derived. | Traceability gaps limited auditability. | Proposed explainability traces to document data sources, assumptions, and logic paths. | Explainability dashboards should be standard in public-sector AI to build confidence and accountability. |
+| 7 **Representation & Bias** | Open datasets overrepresent developed and familiar domains. | Limited generalisability beyond US economic data. | Acknowledged bias; diversified indicators for future iterations. | Ethical AI requires proactive bias detection and contextual explanation, mirrored in environmental and social data gaps. |
+| 8 **Synthetic Data Boundaries** | Simulated data can blur into potential misuse if unlabeled. | Synthetic datasets aided scenario testing but risked misinterpretation. | Clearly labeled and deleted synthetic data post-demo. | Explicit labeling and retention policies are essential to distinguish simulation from official statistics and maintain public trust. |
 
 ---
 
