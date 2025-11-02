@@ -3,10 +3,13 @@
 [![Open Source](https://img.shields.io/badge/status-open--source-brightgreen.svg)](https://github.com/ibpdas/macrocycle-ai-agent)
 [![License](https://img.shields.io/badge/license-educational-blue.svg)](#license)
 
-> **Aligned with:** [HKUST Dial — Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents)  
-> *A curated repository of research and open-source projects exploring autonomous data agents.*  
+> **Academic Alignment:**  
+> Classified as a **Level 2 – Reproducible Data Agent** under the [HKUST Dial “Awesome Data Agents” taxonomy (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents).  
+> Demonstrates *bounded autonomy, reproducibility, and human oversight* through modular, open data pipelines.  
 >
-> **MacroCycle** is a *Level 2 open source prototype* demonstrating a lightweight, reproducible, and ethical data agent — inspired by the taxonomy proposed in Zhu et al. (2025).
+> **Government Alignment:**  
+> Reviewed against the **UK Government AI Playbook (CDDO, 2024)** — showing **strong foundational compliance (4 fully met, 6 partially met)** across lawfulness, transparency, human oversight, and lifecycle management principles.  
+> Serves as an educational reference for how **responsible AI agents** can be developed and governed in the UK public sector.
 
 ---
 
@@ -27,17 +30,18 @@
 
 ## What It Does  
 
-An autonomous **macroeconomic intelligence assistant** demonstrating the potential of **AI-driven data agents** and responsible innovation.  
+**MacroCycle AI Agent** is an autonomous **macroeconomic intelligence prototype** that explores how AI driven data agents can safely automate open data analysis while maintaining human accountability and ethical guardrails.  
 
-MacroCycle automates the collection, analysis, and explanation of key macroeconomic and market indicators to infer business cycle phases.  
-Instead of manually searching for data, it orchestrates multiple open data feeds and provides transparent, explainable summaries using LLM reasoning.  
+It was developed in sandboxed enviroment as part of the **Imperial College London AI Policy Fellowship** to test how autonomous data agents could be adapted to public sector data and policy contexts, including applications in **Defra’s data ecosystem** (e.g., circular economy, waste, and environmental protection).
 
-### Key Features
-- **Automates Key Metrics** – Fetches and refreshes 50+ indicators from FRED, CBOE, and Yahoo Finance  
-- **Infers & Analyses** – Classifies business cycle phases (Expansion / Peak / Contraction / Trough) with confidence scoring  
-- **Natural Language Queries** – Conversational interface powered by GPT-5 for context-aware economic Q&A  
-- **Self-Service Dashboards** – Explore macro, market, and sentiment data interactively  
-- **Data Governance Insights** – Surfaces data quality challenges to guide ethical, unbiased and confident decision-making  
+Key features and focus areas:
+
+- **Automation of Key Metrics** – Fetches and analyses 50+ economic indicators (FRED, CBOE, Yahoo Finance).  
+- **Structured Reasoning** – Classifies business cycle phases with confidence scoring and metadata logging.  
+- **Human Oversight** – Maintains human-in-the-loop control; all AI outputs are explanatory, not predictive.  
+- **Open Data Ethics** – Built entirely on public APIs with clear provenance and synthetic data boundaries.  
+- **Reproducibility** – All workflows version-controlled, modular, and open for reuse.  
+- **Educational Value** – Demonstrates how public organisations can explore AI safely before scaling.  
 
 ---
 
@@ -75,17 +79,17 @@ Instead of manually searching for data, it orchestrates multiple open data feeds
 
 ## Ethics  
 
-MacroCycle follows the principles of **Government data ethics framework**:
+MacroCycle follows the principles of **Data Ethics Framework (2020)**:
 
 - **Transparency** — All results traceable to public sources. Workflows and outputs version-controlled.  
 - **Accountability** — Human-in-the-loop review before publication.  
-- **Fairness** — Designed to support, not replace, expert analysis.  
+- **Fairness** — Designed to make decisions with bias detection, counterfactuals and disbenefit considerations.
 
 ---
 
 ## Analytical Methodology  
 
-MacroCycle follows the principles of **Aquabook**:
+MacroCycle follows the principles of **AQuA book (2025)**:
 
 - Rule-based inference combining GDP, unemployment, inflation, and PMI  
 - Confidence scoring (0–100%) for interpretability  
@@ -99,7 +103,7 @@ MacroCycle follows the principles of **Aquabook**:
 
 | Capability | Result | Verification |
 |-------------|---------|--------------|
-| Business-cycle inference | 85% alignment with NBER historical phases | Historical backtest |
+| Business cycle inference | 85% alignment with NBER historical phases | Historical backtest |
 | Data freshness | Hourly API updates via GitHub Actions | Log audit |
 | LLM consistency | 100% reproducible summaries via structured prompts | Manual review |
 | Governance compliance | Mapped to government data ethics framework | Peer review |
@@ -164,9 +168,9 @@ It shows how **bounded autonomy**, **provenance**, and **human oversight** are e
 
 | Phase | Focus | Target Milestone |
 |-------|--------|-----------------|
-| **Phase 1** | Integrate vector database retrieval and historical context memory for pattern recognition and recall (using Streamlit) | **Level 3 – Conditional Autonomy** |
-| **Phase 2** | Reproduce the architecture with open environmental datasets (circular economy, waste, water, biodiversity, green finance) to test cross-domain reasoning (using internal platform like DASH)| **Multi-Domain Data Agent** |
-| **Phase 3** | Introduce an 'Explainable AI and Data Governance Dashboard' visualising lineage, confidence, and oversight checkpoints — enabling safe use within live policy pilots | **Policy Pilot Readiness – Governed Autonomy** |
+| **Phase 1** | Integrate vector database retrieval and historical context memory for pattern recognition and recall (using Streamlit and Green Finance use case) | **Level 3 – Contextual Data Agent and full compliance with AI Playbook** |
+| **Phase 2** | Reproduce the architecture with environmental datasets (circular economy, waste, water, biodiversity) to test cross-domain reasoning (using internal platform like DASH)| **Level 4 - Multi Domain Data Agent and full compliance with AI Playbook** |
+| **Phase 3** | Introduce an 'Explainable AI and Data Governance Dashboard' visualising lineage, confidence, and oversight checkpoints — enabling safe use within live policy pilots | **Level 4 – Multi Domain Data Agent and Governed Autonomy and full compliance with AI Playbook** |
 
 ---
 
@@ -180,6 +184,15 @@ Special thanks to:
 - **HKUST Dial** for curating the *Awesome Data Agents* repository, which inspired the architectural framing of this Level 2 prototype.  
 
 ---
+
+| **Framework** | **Relevance** |
+|:--|:--|
+| [HKUST Dial – Awesome Data Agents (Zhu et al., 2025)](https://github.com/HKUSTDial/awesome-data-agents) | Academic classification of MacroCycle as a *Level 2 reproducible, governed data agent.* |
+| [UK Government AI Playbook (CDDO, 2024)](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) | 10 principles for safe, ethical, and transparent AI — MacroCycle meets 4 fully, 6 partially. |
+| [Imperial College London AI Policy Fellowship](https://www.imperial.ac.uk/ai-policy-fellowship/) | Programme context for experimental design, governance reflection, and capability building. |
+
+---
+
 
 ## Citation  
 
