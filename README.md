@@ -54,11 +54,11 @@ Key features and focus areas:
 
 **Pipeline Components**
 1. **Data Sources (structured + synthetic)** – Fetch macro indicators (FRED, CBOE, Yahoo) and derive proxies for missing data  
-2. **Processing Layer** – Normalise and store indicators as structured JSON  
-3. **Reasoning Layer** – GPT-5 data agent with *agentic orchestration* (Research, Architect & Testing agents)  
-4. **Interface Layer** – Replit (current) → Streamlit (planned)  
-5. **Automation Layer** – GitHub Actions handle agent execution with a serverless workflow  
-6. **Governance Layer** – JSON data contracts, human oversight, explainability, and audit trail  
+2. **Processing** – Normalise and store indicators as structured JSON  
+3. **Reasoning** – GPT-5 data agent with *agentic orchestration* (Research, Architect & Testing agents)  
+4. **Interface** – Replit (current); Streamlit (planned); Internal tools (planned) (See Roadmap)   
+5. **Automation** – GitHub Actions handle agent execution with a serverless workflow  
+6. **Governance** – JSON data contracts, human oversight, explainability, and audit trail  
 
 > *Development note:*  
 > The MacroCycle prototype was built and tested using **Replit’s AI-assisted development environment** for rapid iteration and experimentation.  
