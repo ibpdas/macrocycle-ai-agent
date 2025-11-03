@@ -137,7 +137,7 @@ It shows how **bounded autonomy, provenance, and human oversight** are essential
 | Phase | Focus | Target Milestone |
 |-------|--------|-----------------|
 | **Phase 1** | Integrate vector database retrieval and historical context memory for pattern recognition and recall (using Streamlit and Green Finance use case) | **Level 3 – Contextual Data Agent and full compliance with AI Playbook** |
-| **Phase 2** | Reproduce the architecture with environmental datasets (circular economy, waste, water, biodiversity) to test cross-domain reasoning (using internal platform like DASH)| **Level 4 - Multi Domain Data Agent and full compliance with AI Playbook** |
+| **Phase 2** | Reproduce the architecture with graph database and environmental datasets (circular economy, waste, water, biodiversity) to test cross-domain reasoning (using internal platform like DASH)| **Level 4 - Multi Domain Data Agent and full compliance with AI Playbook** |
 | **Phase 3** | Introduce an 'Explainable AI and Data Governance Dashboard' visualising lineage, confidence, and oversight checkpoints — enabling safe use within live policy pilots | **Level 4 – Multi Domain Data Agent and Governed Autonomy and full compliance with AI Playbook** |
 
 ---
