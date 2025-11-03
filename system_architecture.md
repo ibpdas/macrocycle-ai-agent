@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
   subgraph L1[Data Sources]
     DS1[FRED\nGDP, CPI, Unemployment, M2]
@@ -32,4 +33,3 @@ flowchart TD
   OR1 --> OR2 --> OR3 --> OR4 --> AR1 --> AR2 --> AR3 --> PR2
   PR3 -. deploy/run .-> PR2
   PR1 -. prototype/run .-> PR2
-
