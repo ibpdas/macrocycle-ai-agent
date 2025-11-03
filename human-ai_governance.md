@@ -61,44 +61,20 @@ This model distils the *actual governance-by-design* principles tested within th
 
 ---
 
-## 6. Governance Flow Diagram (Mermaid)
+## 6. Governance Flow Diagram 
 
 ```mermaid
-flowchart TB
+flowchart LR
+H[Human Orchestrator]
+D[Data Collector]
+M[Modeller]
+R[Reasoning Agent]
+L[Learning Logs]
 
-subgraph G5["Learning & Transparency"]
-  DOCS["Insights Shared / Data, AI & Decision Literacy"]
-end
+H -->|Define scope| D
+D -->|Validated data| M
+M -->|Forecasts| R
+R -->|Explain results| H
+H -->|Feedback| L
+L -->|Update prompts| D
 
-subgraph G4["System Reliability"]
-  CODE["Version Control / Logs"]
-end
-
-subgraph G3["Human–AI Collaboration"]
-  ORCH["Orchestrator"]
-  REASON["Reasoning Agent (AR3)"]
-end
-
-subgraph G2["Data & Model Integrity"]
-  DATA["Data Collector (AR1)"]
-  MODEL["Modelling Agent (AR2)"]
-end
-
-subgraph G1["Ethical & Legal Grounding"]
-  SAFE["Sandbox Boundary"]
-end
-
-SAFE --> DATA
-DATA --> MODEL
-MODEL --> REASON
-REASON --> ORCH
-ORCH --> CODE
-CODE --> DOCS
-DOCS --> SAFE
-
-style SAFE fill:#f9c74f,stroke:#333
-style DATA fill:#577590,stroke:#333
-style MODEL fill:#43aa8b,stroke:#333
-style REASON fill:#90be6d,stroke:#333
-style ORCH fill:#f3722c,stroke:#333
-style DOCS fill:#f94144,stroke:#333
