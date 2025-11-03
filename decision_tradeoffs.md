@@ -18,7 +18,7 @@ flowchart LR
         P1(API-first Architecture<br/>Higher concurrency)
         P2(In house tool i.e., DASH <br/>Security & control)
         P3(Open LLM Stack<br/>Customisable, lower cost)
-        P4(Defra Data Ecosystem<br/>Policy/Outcome alignment)
+        P4(Defra Open Data i.e., DSP <br/>Policy/Outcome alignment)
         P5(Live API Calls<br/>Real time accuracy)
         P6(Restricted Deployment<br/>Data assurance)
         P7(Traditional + AI Dev Teams<br/>Formal governance)
